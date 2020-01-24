@@ -1,23 +1,62 @@
 {
 	"name": "vsce-parse-cmtracelogs",
-	"displayName": "vsce-parse-cmtracelogs",
+	"displayName": "Parse CMTrace Logs",
 	"description": "A simple vsCode extension to parse and display CMTrace-formatted logs",
-	"version": "0.0.1",
+	"preview": true,
+	"version": "0.0.0",
+	"publisher": "MPearon",
+	"keywords": [
+		"mpearon",
+		"trigger",
+		"words",
+		"format",
+		"log"
+	],
+	"author": {
+		"name": "Matthew Pearon",
+		"url": "https://CL3VER.life/mpearon"
+	},
+	"homepage": "https://github.com/mpearon/PUB-vsce.parse-CMTraceLogs/blob/master/README.md",
+	"icon": "resources/altIcon-256.png",
+	"galleryBanner": {
+		"color": "#520000",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mpearon/PUB-vsce.parse-CMTraceLogs"
+	},
+	"license": "MIT",
+	"extensionKind": [
+		"ui"
+	],
+	"categories": [
+		"Formatters"
+	],
+	"files.associations": {
+		"*.log": "log"
+	},
+	"languages": [
+		{
+			"id": "log",
+			"extensions": [
+				".log"
+			]
+		}
+	],
+	"activationEvents": [
+		"onCommand:extension.parseCMTraceLogs",
+		"onLanguage:log"
+	],
 	"engines": {
 		"vscode": "^1.39.0"
 	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.parseCMTraceLogs",
+				"title": "Parse CMTrace Logs"
 			}
 		]
 	},
