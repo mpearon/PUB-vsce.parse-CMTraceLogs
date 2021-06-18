@@ -1,3 +1,8 @@
+# v0.0.3 - 2021-06-18
+- Version bump from `0.0.3` to `0.0.4`
+- Updated lodDash
+  - Dependabot Vulnerability
+- Updated CHANGELOG
 # v0.0.2 - 2021-04-12
 - Version bump from ```0.0.2``` to ```0.0.3```
 - Merged dependabot vulnerability
