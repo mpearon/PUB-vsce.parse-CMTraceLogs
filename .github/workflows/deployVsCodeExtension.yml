@@ -15,3 +15,5 @@ jobs:
           args: "publish -p $VSCE_TOKEN"
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+          process.env.GITHUB_USER: "Matthew Pearon"
+          process.env.GITHUB_EMAIL: "mpearon@users.noreply.github.com"
