@@ -3,7 +3,7 @@
 	"displayName": "Parse CMTrace Logs",
 	"description": "A simple vsCode extension to parse and display CMTrace-formatted logs",
 	"preview": true,
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"publisher": "MPearon",
 	"keywords": [
 		"mpearon",
