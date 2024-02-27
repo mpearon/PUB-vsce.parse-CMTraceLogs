@@ -10,10 +10,13 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - uses: phips28/gh-action-bump-version@v11.0.0
+        with:
+          skip-tag:  'true'
+        env:
+          process.env.GITHUB_USER: "Matthew Pearon"
+          process.env.GITHUB_EMAIL: "mpearon@users.noreply.github.com"
       - uses: lannonbr/vsce-action@master
         with:
           args: "publish -p $VSCE_TOKEN"
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
-          process.env.GITHUB_USER: "Matthew Pearon"
-          process.env.GITHUB_EMAIL: "mpearon@users.noreply.github.com"
