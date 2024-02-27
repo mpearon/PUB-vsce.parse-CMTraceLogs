@@ -13,8 +13,8 @@ jobs:
         with:
           skip-tag:  'true'
         env:
-          process.env.GITHUB_USER: "Matthew Pearon"
-          process.env.GITHUB_EMAIL: "mpearon@users.noreply.github.com"
+          GITHUB_USER: "Matthew Pearon"
+          GITHUB_EMAIL: "mpearon@users.noreply.github.com"
       - uses: lannonbr/vsce-action@master
         with:
           args: "publish -p $VSCE_TOKEN"
